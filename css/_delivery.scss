@@ -1,0 +1,45 @@
+@import '../css/variables';
+
+
+.delivery {
+    height: auto;
+    margin: 35px auto;
+    margin-top: 60px;
+    @media screen and (max-width: $sm) {
+        margin-top: 0;
+    }
+    &__row {
+       align-items:center; 
+    }
+    &__column {
+        text-align: center;
+        margin: 20px auto;
+        &_top {
+            align-self:baseline;
+        }
+        @media screen and (max-width: $sm) {
+            padding:0;
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+        @media screen and (max-width: $sm) {
+            text-align: left;
+        }
+    }
+    
+    &__item {
+        @include flexbox;
+        img {
+            align-self: flex-start;
+            padding-right: 30px;
+        }
+        p {
+            width: 400px;
+            text-align: left;
+        }
+        &_margin {
+            margin-bottom: 50px;
+        }
+    }
+}

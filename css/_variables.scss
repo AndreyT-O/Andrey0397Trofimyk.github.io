@@ -1,0 +1,33 @@
+@mixin flexbox {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin positionAbsolute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+//Color button
+$btnColor: #F76F0D;
+// Color info for guest
+$guestColor: #9EF9F9;
+// Color for swiper
+$swiperColor: #A79F9F;
+// Large desktop
+$lg: '1090px';
+
+
+// Medius desktop and laptop
+$md: '992px';
+
+// Small mobile
+$sm: '576px';
+
+// Exstra small Small Mobile
+
+$sx: '360px';

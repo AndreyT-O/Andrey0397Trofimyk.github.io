@@ -1,0 +1,65 @@
+@import '../css/variables';
+
+
+.call {
+    background: url('../img/Form/getty.png') no-repeat center center/ cover;
+    // padding: 130px 0;
+    &__title {
+        text-align: center;
+        margin: 60px auto 40px auto;
+        width: auto;
+        @media screen and (max-width:$sm) {
+            font-size:1.2em;
+        }
+    }
+    &__body {
+        .form {
+            width: 260px;
+            overflow:hidden;
+            margin:0 auto;
+            &__item {
+                @include flexbox;
+                justify-content: flex-start;
+                width: inherit;
+                height: 45px;
+                background: #fff;
+                padding:10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                &:hover {
+                    path {
+                        fill: $btnColor;
+                        transform: scale(.9);
+                        transition: all .4s ease-in-out;
+                    }
+                }
+                input {
+                    width: 180px;
+                    margin-left:5px;
+                }
+                svg {
+                    margin: 0 3px;
+                }
+                &_button {
+                    width: inherit;
+                    // margin-top:30px;
+                    margin: 30px 0 50px 0;
+                    background: $btnColor;
+                    img {
+                        background: #fff;
+                        width: 30px;
+                        border-radius: 50%;
+                        padding: 6px;
+                    }
+                    a {
+                        width: 100%;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

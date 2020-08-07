@@ -1,0 +1,83 @@
+@import '../css/variables';
+
+.about {
+    background: linear-gradient(180deg, #E6FBFF 0%, rgba(253, 254, 255, 0) 100%);
+    margin-bottom: 50px;
+    position:relative;
+    &:after {
+        content:'';
+        background: url('../img/About/tablets2.jpg') no-repeat right center / 100%;
+        position: absolute;
+        width: 700px;
+        height: 100%;
+        bottom: 0px;
+        right: 0px;
+        transform: scaleX(-1);
+        z-index:-1;
+    }
+    @media screen and (max-width: $md) {
+        &:after {
+            width: 60%;
+            top: 100px;
+        }
+    }
+    @media screen and (max-width: $sm) {
+        margin-bottom: 0;
+        &:after {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: $sx) {
+        margin-bottom: 100px;
+        &:after {
+            transform: scaleX(1);
+            left:0;
+            width: 100%;
+            top: 320px;
+        }
+    }
+    &__title {
+        margin-top: 30px;
+    }
+    &__text {
+        padding:0;
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: $sm) {
+            p {
+                font-size:16px;
+            }
+        }
+    }
+    &__image {
+        img {
+            background: linear-gradient(180deg, #E6FBFF 0%, rgba(253, 254, 255, 0) 100%);
+            position: absolute;
+            right: 0;
+            transform: scaleX(-1);
+            object-fit: cover;
+            width: 500px;
+            z-index: -1;
+            margin-top: 0;
+        }
+        @media screen and (max-width: '768px') {
+            img {
+                transform: scaleX(1);
+                width: 100%;
+                left:0;
+                margin-top: -60%;
+            }
+        }
+        @media screen and (max-width: '400px') {
+            img {
+                margin-top:-80px;
+            }
+        }
+    }
+}
